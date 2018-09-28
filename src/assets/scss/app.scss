@@ -1,11 +1,13 @@
 @charset 'utf-8';
 
-@import 'custom/variables';
-@import 'custom/mixins';
-@import 'custom/global';
+
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'custom/variables';
+@import 'custom/mixins';
+@import 'custom/global';
+@import 'custom/home';
 
 @include foundation-global-styles;
 @include foundation-grid;

@@ -16,3 +16,41 @@
 		box-shadow: 0 8px 17px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.20);
 	}
 }
+
+/* Przyciski */
+
+.button {
+    text-transform: uppercase;
+	@include lp-std-shadow;
+    	&:hover {
+		box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+	}
+}
+
+// Stopka
+
+.lp-footer {
+    background: $lp-primary-color;
+}
+
+// formularze
+
+.lp-form {
+    input, textarea {
+        color: $lp-white;
+        border-bottom: 1px solid $lp-divider-color;
+        &:active, &:focus {
+        border-bottom: 1px solid $lp-accent-color;
+
+        }
+    }
+    ::-moz-placeholder {
+        color: $lp-70p-white;
+    }
+    ::-webkit-input-placeholder {
+        color: $lp-70p-white;
+    }
+    :-ms-input-placeholder {
+        color: $lp-70p-white;
+    }
+}

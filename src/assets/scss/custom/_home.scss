@@ -1,0 +1,62 @@
+/* Naglowek */
+.lp-top	{
+	background: $lp-dark-primary-color;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: $lp-top-menu-h;
+	@include lp-std-shadow;
+}
+
+.top-bar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    .title-bar {
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+}
+
+.lp-logo {
+    float: left;
+    @include breakpoint(small only) {
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+    }
+    span {
+        font-size: 40px;
+    }
+}
+
+// Menu desktop
+
+.lp-desktop-menu {
+    > li {
+        line-height: $lp-top-menu-h;
+        height: $lp-top-menu-h;
+    }
+    .submenu {
+        background-color: $white;
+        @include lp-std-shadow;
+        a {
+
+            color: $lp-primary-text-color;
+        }
+    }
+}
+
+// Menu mobilne
+
+#mobile-dropdown {
+    @include lp-std-shadow;
+    background-color: $lp-white;
+    a {
+
+        color: $lp-primary-text-color;
+    }
+}
