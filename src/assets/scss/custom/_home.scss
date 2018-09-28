@@ -1,4 +1,4 @@
-/* Naglowek */
+// Nagłówek
 .lp-top	{
 	background: $lp-dark-primary-color;
 	position: fixed;
@@ -38,7 +38,6 @@
 .lp-desktop-menu {
     > li {
         line-height: $lp-top-menu-h;
-        height: $lp-top-menu-h;
     }
     .submenu {
         background-color: $white;
@@ -59,4 +58,10 @@
 
         color: $lp-primary-text-color;
     }
+}
+
+// Separator
+.lp-top-Separator {
+    display: block;
+    height: $lp-top-menu-h;
 }
