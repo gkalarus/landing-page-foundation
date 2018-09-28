@@ -194,3 +194,27 @@
     }
 
 }
+
+// Opinie
+.lp-opinion {
+    padding: 70px 0 80px;
+    background-color: lighten($lp-divider-color, 22%);
+
+    .lp-section-header {
+        p {
+            color: $lp-87p-black;
+        }
+    }
+
+    .card {
+        padding: 20px;
+        font-weight: 400;
+    }
+
+    .lp-opinion-title {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        color: $lp-accent-color;
+    }
+}
