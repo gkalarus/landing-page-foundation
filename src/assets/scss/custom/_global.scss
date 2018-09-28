@@ -1,0 +1,18 @@
+/* Naglowek sekcji */
+.lp-section-header {
+	margin-bottom: 2.7rem;
+	h2 {
+		font-size: 2.85rem;
+	}
+}
+
+/* Karty */
+.card {
+	border-radius: 2px;
+	background: $white;
+	@include lp-std-shadow;
+	@include lp-transition;
+	&:hover {
+		box-shadow: 0 8px 17px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.20);
+	}
+}
