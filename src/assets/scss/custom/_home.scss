@@ -1,16 +1,17 @@
 // Nagłówek
-.lp-top	{
-	background: $lp-dark-primary-color;
-	position: fixed;
-	z-index: 9999;
-	width: 100%;
-	height: $lp-top-menu-h;
-	@include lp-std-shadow;
+.lp-top {
+    background: $lp-dark-primary-color;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: $lp-top-menu-h;
+    @include lp-std-shadow;
 }
 
 .top-bar {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+
     .title-bar {
         background-color: transparent;
         position: absolute;
@@ -22,12 +23,14 @@
 
 .lp-logo {
     float: left;
+
     @include breakpoint(small only) {
         position: absolute;
         left: 50%;
-        top:50%;
+        top: 50%;
         transform: translate(-50%, -50%);
     }
+
     span {
         font-size: 40px;
     }
@@ -36,12 +39,14 @@
 // Menu desktop
 
 .lp-desktop-menu {
-    > li {
+    >li {
         line-height: $lp-top-menu-h;
     }
+
     .submenu {
         background-color: $white;
         @include lp-std-shadow;
+
         a {
 
             color: $lp-primary-text-color;
@@ -54,6 +59,7 @@
 #mobile-dropdown {
     @include lp-std-shadow;
     background-color: $lp-white;
+
     a {
 
         color: $lp-primary-text-color;
@@ -64,4 +70,93 @@
 .lp-top-Separator {
     display: block;
     height: $lp-top-menu-h;
+}
+
+// Slider
+.lp-slider {
+    background: url("../img/bg_1.jpg") no-repeat center center;
+    bacground-size: cover;
+}
+
+.orbit {
+    .orbit-slide {
+        color: $lp-white;
+
+        p {
+            color: $lp-70p-white;
+        }
+
+        padding: 9.5rem 0;
+
+        @include breakpoint (large) {
+            padding: 16.25rem 0;
+        }
+
+        p {
+            color: $lp-70p-white;
+            font-size: 1.25rem;
+
+            @include breakpoint (large) {
+                font-size: 2.25rem;
+            }
+        }
+
+        h1 {
+            font-size: 3.25rem;
+            text-transform: uppercase;
+
+            @include breakpoint (large) {
+                font-size: 7rem;
+                line-height: 8rem;
+                letter-spacing: -5px;
+            }
+        }
+
+        a {
+            margin-top: 15px;
+        }
+    }
+
+    .orbit-bullets {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .is-active {
+            background-color: $lp-accent-color;
+        }
+
+        button {
+            background-color: grey;
+        }
+    }
+}
+
+// Zalety
+
+.lp-highlights {
+    padding: 70px 0 80px;
+
+    p {
+        color: $lp-secondary-text-color;
+    }
+
+    .lp-highlight {
+        margin-bottom: 25px;
+
+        p {
+            color: $lp-87p-black;
+        }
+
+        h4 {
+            font-size: 1.56rem;
+        }
+
+        .round-icon {
+            font-size: 3.56rem;
+            margin: 1.7rem 0 1rem;
+            color: $lp-primary-color;
+        }
+    }
 }
