@@ -160,3 +160,37 @@
         }
     }
 }
+
+// Portfolio
+
+.lp-portfolio {
+    padding: 100px 0 120px;
+    background: url("../img/bg_port.jpg") no-repeat center center;
+    background-size: cover;
+
+    .lp-section-header {
+        color: $lp-white;
+
+        p {
+            color: $lp-70p-white;
+        }
+    }
+}
+
+.lp-portfolio-box {
+    margin-bottom: 40px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.lp-portfolio-title {
+    padding: 10px;
+    font-size: 1.25rem;
+
+    p {
+        font-weight: 400;
+    }
+
+}
